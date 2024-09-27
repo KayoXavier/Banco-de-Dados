@@ -12,7 +12,8 @@ O objetivo deste trabalho foi criar, desde o início, um banco de dados para ger
 - **10 Relacionamentos**: Entre as entidades, incluindo agregações, especializações e até mesmo recursões, refletindo a complexidade das operações hospitalares.
 - **Modelo ERE**: A primeira fase do projeto envolveu a criação do modelo Entidade-Relacionamento Estendido (ERE), documentando todas as entidades e seus relacionamentos.
 - **Implementação em SQL**: Na segunda fase, o modelo ERE foi transformado para o modelo relacional e implementado em SQL, garantindo que todas as restrições, chaves primárias e estrangeiras, e demais regras de negócio fossem contempladas.
-
+- **Script Python**: Além dos modelos anteriores, fizemos a implementação de um código python que consegue consultar, atualizar, deletar e inserir novos itens ao banco
+- 
 ## Estrutura do Projeto
 
 - **/docs**: Contém a documentação completa do modelo ERE e os diagramas.
