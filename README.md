@@ -16,9 +16,9 @@ O objetivo deste trabalho foi criar, desde o início, um banco de dados para ger
 - 
 ## Estrutura do Projeto
 
-- **/docs**: Contém a documentação completa do modelo ERE e os diagramas.
-- **/sql**: Inclui os scripts SQL utilizados para criar e popular as tabelas do banco de dados.
-- **/scripts**: Scripts adicionais para manipulação e consultas ao banco de dados.
+- **/documentação**: Contém a documentação completa do modelo ERE e os diagramas.
+- **/tables.sql**: Inclui os scripts SQL utilizados para criar e popular as tabelas do banco de dados.
+- **/python.py**: Scripts adicionais para manipulação e consultas ao banco de dados.
 
 ## Como Executar
 
