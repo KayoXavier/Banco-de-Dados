@@ -179,7 +179,7 @@ CREATE TABLE Cirurgia (
     DataConsulta DATE  NOT NULL,
     Codigo INT ,
     Nome VARCHAR(255) NOT NULL,
-    Duracao TIME NOT NULL,
+    Duracao TIME NOT NULL, 
     Hora_Inicio TIME NOT NULL,
     Hora_Termino TIME NOT NULL,
     CONSTRAINT pk_cirurgia PRIMARY KEY(Codigo),
@@ -233,6 +233,8 @@ CREATE TABLE Fornece (
     NRMRem INT NOT NULL,
     IDEnf INT NOT NULL,
     IDFarm INT NOT NULL,
+    Quantiadade INT NOT NULL, 
+    DataFornecimento DATE NOT NULL,
     CONSTRAINT pk_fornece PRIMARY KEY (NRMRem, IDEnf, IDFarm),
     CONSTRAINT fk_fornece_remedio FOREIGN KEY (NRMRem) REFERENCES Remedio(NRM) ON DELETE CASCADE,
     CONSTRAINT fk_fornece_enfermeiro FOREIGN KEY (IDEnf) REFERENCES Enfermeiro(ID_Unico) ON DELETE CASCADE,
@@ -441,12 +443,12 @@ VALUES
 (1616, '56789012345');
 
 -- Inserir fornecimento de remédios
-INSERT INTO Fornece (NRMRem, IDEnf, IDFarm)
+INSERT INTO Fornece (NRMRem, IDEnf, IDFarm, DataFornecimento, Quantiadade)
 VALUES
-(1, 1515, 2222),  
-(2, 1515, 2222), 
-(3, 1616, 2323),  
-(4, 1616, 2323); 
+(1, 1515, 2222,'2024-09-25',4),  
+(2, 1515, 2222,'2024-09-25',5), 
+(3, 1616, 2323,'2024-09-25',3),  
+(4, 1616, 2323,'2024-09-25',6); 
 
 -- Inserir dados na tabela Reporta
 INSERT INTO Reporta ( IDDir, IDEnfChefe, IDMed)
